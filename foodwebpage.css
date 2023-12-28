@@ -129,15 +129,24 @@ nav{
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
-    
-    
 }
 .services{
     width: 340px;
     height: 390px;
     background-color:whitesmoke;
     border-radius: 20px;
-    box-shadow: 1px 1px 1px 1px lightslategray;
+    box-shadow: 3px 2px 3px 1px rgb(142, 166, 189);
+}
+.services:hover{
+    width: 380px;
+    height: 430px;
+    background-color:rgb(212, 207, 207);
+    border-radius: 20px;
+    box-shadow: 5px 3px 5px 1px black;
+}
+.services>p:hover{
+    color: rgb(24, 21, 21);
+    font-size: large;
 }
 .services>img{
     width: 80%;
@@ -150,10 +159,8 @@ nav{
     color: darkcyan;
 }
 #service-para{
-    color: darkcyan;
-    
+    color: darkcyan;    
 }
-
 #about-usin{
     display: flex;
     justify-content: space-around;
@@ -189,7 +196,7 @@ nav{
 }
 #our-package{
     width: 100%;
-    height: 1500px;
+    height: 1450px;
     text-align: center;
 }
 #packagein{
@@ -230,32 +237,24 @@ nav{
     border-radius: 10px;
     margin-top: -10px;
 }
-#rating{
-    width: 100%;
-    height: 450px;
-    margin: auto;
-    margin-top: 30px;
-    background-image: url(https://img.freepik.com/premium-photo/vegetarian-food-concept-cauliflower-steak-with-spices-chimichurri-sauce-almond-flakes-olives-fried-cherry-tomatoes-capers-white-plate-white-background-banner-place-text_209484-2080.jpg?w=1380);
-    background-size: cover;
-    text-align: center;
-    /* background-color: bisque; */
+.carousel-item>img{
+    height: 400px;
+    object-fit: cover;
 }
-#ratingin>h1{
-    margin-bottom: 30px;
-    padding-top: 40px;
-    
-    
+.carousel-item{
+    margin: 50px,5px;
+
 }
-#ratingin>p{
-    margin-bottom: 40px;
-    line-height: 1.5;
-    margin: 0px 200px;
-    font-size: large;
-    color: rgb(58, 44, 44);
+.carousel-caption>h{
+    font-size: xx-large;
+}
+.carousel-caption>p{
+    font-size: x-large;
+    margin-top: 5px;
 }
 #star{
-    margin: 20px 0px;
-    color: chartreuse;
+    margin: 0px 0px;
+    color:gold;
 }
 #icon-collections{
     display: flex;
@@ -298,6 +297,59 @@ html{
 .up-arrow{
     float: right;
     margin: -40px,30px,30px,0px;
+}
+.content1,.content2,.content3,.content4{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 81, 128);
+    position: absolute;
+    padding: 10px;
+    display: none;
+    margin-top: -16px;
+    margin-left: -16px;
+}
+.c1:hover .d1{
+    display: none;
+    transition: 4s;
+}
+.c1:hover .content1{
+    display: block;
+    transition: 4s;
+}
+.c2:hover .d2{
+    display: none;
+    transition: 4s;
+}
+.c2:hover .content2{
+    display: block;
+    transition: 4s;
+}
+.c3:hover .d3{
+    display: none;
+    transition: 4s;
+}
+.c3:hover .content3{
+    display: block;
+    transition: 4s;
+}
+.c4:hover .d4{
+    display: none;
+    transition: 4s;
+}
+.c4:hover .content4{
+    display: block;
+    transition: 4s;
+}
+.card-img-top{
+    height: 200px;
+    width: 290px;
+}
+.card{
+    margin-bottom: 20px;
+}
+#combo_offers{
+    margin-bottom: 18px;
+    flex-wrap: wrap; 
 }
 @keyframes move {
     0%{
@@ -374,7 +426,7 @@ html{
     }
     #head1{
         color: white;
-        line: height -1px;;
+        line-height: -1px;
         font-size:200%;
     }
     #button1{
@@ -417,6 +469,13 @@ html{
         border-radius: 20px;
         box-shadow: 1px 1px 1px 1px lightslategray;
     }
+    .services:hover{
+        width: 25%;
+        height: 95%;
+        background-color:rgb(212, 207, 207);
+        border-radius: 20px;
+        box-shadow: 1px 3px 2px 1px black;
+    }
     .services>img{
         width: 80%;
         height: 60%;
@@ -441,6 +500,7 @@ html{
     }
     #about-usin{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         margin-top: 10px;
         margin: 0px 12px;
@@ -448,7 +508,6 @@ html{
     #about-content{
         width: 100%;
         height: 230px;
-        /* background-color: blueviolet; */
     }
     #about-content>p{
         line-height:normal;
@@ -459,7 +518,6 @@ html{
     }
     #about-img{
        display: none;
-        
     }
     #our-package{
         width: 100%;
@@ -509,41 +567,51 @@ html{
         padding:0px;
         margin-top:0px;
     }
-    #rating{
-        width: 100%;
-        height: 350px;
-        margin-top: 50px;
-        /* background-color: bisque; */
+    .carousel-item>img{
+        height: 250px;
+        object-fit: cover;
     }
-    #ratingin>h1{
-        margin-bottom: 10px;
-        padding-top: 12px;
-        
-        
+    .carousel-caption>h{
+        font-size: large;
     }
-    #ratingin>p{
-        /* margin-bottom: 120px; */
-        line-height:normal;
-        margin: 0px 10px;
-        font-size:x-small;
-        text-align: center;
-        color: rgb(58, 44, 44);
-    }
-    #star{
-        margin: 10px 0px;
-        color: chartreuse;
+    .carousel-caption>p{
+        font-size:smaller;
+        margin: 10px;
     }
     .fs-1{
         font-size: smaller;
     }  
+    .carousel-item>p{
+        font-size: xx-small;
+    }
+    .fa-star{
+        font-size: smaller;
+    }
+    .card-img-top{
+        width: 60px;
+        height: 90px;
+        
+    }
+    #combo_offers{
+        margin-bottom: 8px;
+        flex-wrap:wrap; 
+    }
+    .content1,.content2,.content3,.content4{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 81, 128);
+        position: absolute;
+        padding: 0px;
+        display: none;
+        /* margin-top: -16px;
+        margin-left: -16px; */
+    }
+    .card{
+        padding: 0px;
+    }
         
 }
-/* @media screen and (max-width : 1470px){
-    #rating{
-        margin-top: 40px;
-    } */
-}
-    
+
     
     
 
