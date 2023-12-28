@@ -1,0 +1,549 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+#contain{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}   
+nav{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+}
+#type{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    
+}
+.types{
+    list-style: none; 
+    margin-right: 40px;
+}
+#home{
+    background-image: url(./pics/food.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 730px;
+    margin: auto;
+}
+#front-pagein{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#head1{
+    color: white;
+    line-height: 1.5;
+    font-size: 400%;
+    font-weight: 900;
+}
+#p1{
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+}
+/* #h1{
+    font-size:450%;
+    font-weight: 900;
+} */
+#b1{
+    padding: 10px 30px;
+    background-color: rgb(131, 161, 187);
+    border-radius: 50%;
+    border: rgb(131, 161, 187) 1px solid;
+    font-weight: 600;
+    font-size: large;
+}
+#inside1{
+    width: 40%;
+    margin-left: 20px;
+}
+#inside2{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   text-align: center;
+   /* flex-wrap: wrap; */
+   width: 50%;
+   /* background-color: aqua; */
+   margin-left: 0px;
+}
+#most-selling{
+    margin-left: 1000px;
+    margin-top: -390px;
+    color: rgb(249, 247, 243);
+    font-weight:600 ;
+}
+.p2{
+    color: rgb(156, 231, 7);
+    margin-top: -30px;
+    margin-left: 15px;
+}
+.i1{
+    width: 190px;
+    height: 250px;
+    border-radius: 10px;
+     margin-left: 30px;
+}
+.i1:hover{
+    width: 200px;
+    height: 260px;
+    border-radius: 10px;
+    margin-left: 20px;
+
+}
+.links:hover{
+    color: rgb(216, 28, 28);
+    /* font-size: large;
+    font-weight: 600;
+    text-decoration: none; */
+}
+#our-services{
+    margin-top: 60px;
+    width:100%;
+    height: 580px;
+    text-align: center;
+    
+}
+#services-1{
+    width: 85%;
+    height: 360px;
+    margin: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+    
+}
+.services{
+    width: 340px;
+    height: 390px;
+    background-color:whitesmoke;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px lightslategray;
+}
+.services>img{
+    width: 80%;
+    height: 60%;
+}
+.services>p{
+    line-height: 1.5;
+    margin-top: 6px;
+    padding: 0px 20px;
+    color: darkcyan;
+}
+#service-para{
+    color: darkcyan;
+    
+}
+
+#about-usin{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin: 0px 40px;
+}
+#about-us{
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  
+}
+#about-content{
+    width: 54%;
+    height: 350px;
+    margin-top: 20px;
+}
+#about-content>p{
+    line-height: 1.5;
+    text-align: justify;
+    margin: 40px;
+    color: darkcyan;
+}
+#about-img{
+    width: 49%;
+    height: 500px;
+    
+}
+#about-img>img{
+    width: 75%;
+    height: 400px;
+}
+#our-package{
+    width: 100%;
+    height: 1500px;
+    text-align: center;
+}
+#packagein{
+    width: 90%;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: auto;
+    padding-top: 15px;
+    /* background-color: rgb(31, 192, 192);   */
+}
+#package-para{
+    color: darkcyan;
+}
+.fooditems{
+    width: 290px;
+    height: 340px;
+    margin: 20px;
+    background-color: rgb(206, 199, 199);
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 10px;
+
+}
+.fooditems>img{
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 30px;
+}
+.package-button>a{
+    color: white;
+    text-decoration: none;
+}
+.package-button{
+    background-color: red;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+#rating{
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    margin-top: 30px;
+    background-image: url(https://img.freepik.com/premium-photo/vegetarian-food-concept-cauliflower-steak-with-spices-chimichurri-sauce-almond-flakes-olives-fried-cherry-tomatoes-capers-white-plate-white-background-banner-place-text_209484-2080.jpg?w=1380);
+    background-size: cover;
+    text-align: center;
+    /* background-color: bisque; */
+}
+#ratingin>h1{
+    margin-bottom: 30px;
+    padding-top: 40px;
+    
+    
+}
+#ratingin>p{
+    margin-bottom: 40px;
+    line-height: 1.5;
+    margin: 0px 200px;
+    font-size: large;
+    color: rgb(58, 44, 44);
+}
+#star{
+    margin: 20px 0px;
+    color: chartreuse;
+}
+#icon-collections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: solid 1px; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon:hover{
+    background-image: linear-gradient(to top,white,lightgray,red);
+    
+}
+.brand{
+    font-size: 30px;
+    color: black;
+}
+.brand:hover{
+    color: blueviolet;
+    animation: move 1s; 
+
+}
+#contacts{
+    margin-top: 20px;
+    text-align: center;
+}
+#contacts>p{
+    color: darkcyan;
+}
+html{
+    scroll-behavior: smooth;
+}
+.up-arrow{
+    float: right;
+    margin: -40px,30px,30px,0px;
+}
+@keyframes move {
+    0%{
+        transform: rotate(25deg);
+    }
+    25%{
+        transform: rotate(-25deg);
+    }
+    50%{
+        transform: rotate(25deg);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}
+
+@media screen and (min-width : 280px)  and (max-width : 1068px){
+    .links{
+        font-size:40%;
+        margin-right: 4px;
+    }
+    .types{
+        margin-right:5px;
+    }
+    #home{
+        background-image: url(./pics/food.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 330px;
+        margin: auto;
+    }
+    #front-pagein{
+        width: 100%;
+        height: 130px;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    #inside1{
+        width: 45%;
+        margin-left: 7px;
+    }
+    #inside2{
+        margin-top: 140px;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       text-align: center;
+       width: 40%;
+       margin-right: -55px;
+    }
+    p{
+        font-size: smaller;
+        line-height: normal;
+    }
+    .i1{
+        width: 60px;
+        height: 80px;
+        border-radius: 10px;
+         margin-left: 10px;
+    }
+    .i1:hover{
+        width: 65px;
+        height: 85px;
+        border-radius: 10px;
+        margin-left: 6px;
+    }
+    .p2{
+        font-size:38%;
+        margin-right: 5px;
+    }
+    #head1{
+        color: white;
+        line: height -1px;;
+        font-size:200%;
+    }
+    #button1{
+        display: none;
+    }
+    #p1{
+       display: none;
+    }
+    nav{
+        height: 50px;
+    }
+    #b1{
+        padding: 10px 30px;
+        background-color: rgb(131, 161, 187);
+        border-radius: 50%;
+        border: rgb(131, 161, 187) 1px solid;
+        font-weight: 600;
+        font-size: large;
+    }
+    #our-services{
+        margin-top: 20px;
+        width:100%;
+        height: 300px;
+        text-align: center;
+    }
+    #services-1{
+        width: 85%;
+        height: 120px;
+        margin: auto;
+        display: flex;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .services{
+        width: 25%;
+        height: 95%;
+        background-color:whitesmoke;
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px 1px lightslategray;
+    }
+    .services>img{
+        width: 80%;
+        height: 60%;
+    }
+    .services>p{
+       display: none;
+    }
+    .services>h1{
+        margin-top: 8px;
+        font-size: small;
+    }
+    #service-para{
+        color: darkcyan;
+        
+    }
+    #about-us{
+        height: 300px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+      
+    }
+    #about-usin{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        margin: 0px 12px;
+    }
+    #about-content{
+        width: 100%;
+        height: 230px;
+        /* background-color: blueviolet; */
+    }
+    #about-content>p{
+        line-height:normal;
+        text-align: justify;
+        margin: 8px;
+        color: darkcyan;
+        font-size: smaller;
+    }
+    #about-img{
+       display: none;
+        
+    }
+    #our-package{
+        width: 100%;
+        height: 670px;
+        text-align: center;
+        margin-top: 230px;
+    }
+    #packagein{
+        width: 90%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin: auto;
+        padding-top: 5px;
+        /* background-color: rgb(31, 192, 192);   */
+    }
+    #package-para{
+        color: darkcyan;
+    }
+    .fooditems{
+        width: 90px;
+        height: 110px;
+        margin: 7px;
+        background-color: rgb(206, 199, 199);
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+        padding: 3px;
+        margin-bottom:19px;
+    
+    }
+    .fooditems>img{
+        width: 100%;
+        height: 80%;
+        border-top-left-radius: 30px;
+    }
+    .fooditems>h4{
+        font-size: xx-small
+    }
+    .package-button>a{
+        color: white;
+        text-decoration: none;
+    }
+    .package-button{
+        background-color: red;
+        font-size: xx-small;
+        padding:0px;
+        margin-top:0px;
+    }
+    #rating{
+        width: 100%;
+        height: 350px;
+        margin-top: 50px;
+        /* background-color: bisque; */
+    }
+    #ratingin>h1{
+        margin-bottom: 10px;
+        padding-top: 12px;
+        
+        
+    }
+    #ratingin>p{
+        /* margin-bottom: 120px; */
+        line-height:normal;
+        margin: 0px 10px;
+        font-size:x-small;
+        text-align: center;
+        color: rgb(58, 44, 44);
+    }
+    #star{
+        margin: 10px 0px;
+        color: chartreuse;
+    }
+    .fs-1{
+        font-size: smaller;
+    }  
+        
+}
+/* @media screen and (max-width : 1470px){
+    #rating{
+        margin-top: 40px;
+    } */
+}
+    
+    
+    
+
