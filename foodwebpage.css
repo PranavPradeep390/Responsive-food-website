@@ -90,9 +90,10 @@ nav{
     font-weight:600 ;
 }
 .p2{
-    color: rgb(156, 231, 7);
-    margin-top: -30px;
+    color: rgb(213, 213, 212);
+    margin-top: -60px;
     margin-left: 15px;
+    font-weight: 600;
 }
 .i1{
     width: 190px;
@@ -305,8 +306,9 @@ html{
     position: absolute;
     padding: 10px;
     display: none;
-    margin-top: -16px;
-    margin-left: -16px;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: -10px;
 }
 .c1:hover .d1{
     display: none;
@@ -343,13 +345,47 @@ html{
 .card-img-top{
     height: 200px;
     width: 290px;
+    background-color: brown;
 }
 .card{
     margin-bottom: 20px;
+    width: 288px;
+    padding: 10px;
+    
 }
 #combo_offers{
     margin-bottom: 18px;
     flex-wrap: wrap; 
+}
+.btnn{
+    padding: 3px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+#chefs{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 110px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.cardd{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    border-radius: 20%;
+    padding: 5px;
+}
+.cardd>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.cardd>h5{
+    margin-top: 15px;
 }
 @keyframes move {
     0%{
@@ -365,13 +401,35 @@ html{
         transform: rotate(-25deg);
     }
     100%{
+        transform: rotate(25deg);
+    }
+}
+.fooditems:hover{
+    animation: moveee 1s; 
+    background-color: rgb(91, 89, 89);
+    color: white;
+}
+@keyframes moveee {
+    0%{
+        transform: rotate(2deg);
+    }
+    25%{
+        transform: rotate(-2deg);
+    }
+    50%{
+        transform: rotate(2deg);
+    }
+    75%{
+        transform: rotate(-2deg);
+    }
+    100%{
         transform: rotate(2deg);
     }
 }
 
 @media screen and (min-width : 280px)  and (max-width : 1068px){
     .links{
-        font-size:40%;
+        font-size:50%;
         margin-right: 4px;
     }
     .types{
@@ -396,7 +454,7 @@ html{
         margin-left: 7px;
     }
     #inside2{
-        margin-top: 140px;
+        margin-top: 110px;
        display: flex;
        align-items: center;
        justify-content: space-evenly;
@@ -409,20 +467,24 @@ html{
         line-height: normal;
     }
     .i1{
-        width: 60px;
-        height: 80px;
+        width: 100px;
+        height: 120px;
         border-radius: 10px;
          margin-left: 10px;
     }
     .i1:hover{
-        width: 65px;
-        height: 85px;
+        width: 105px;
+        height: 125px;
         border-radius: 10px;
-        margin-left: 6px;
+        margin-left: 15px;
+        
     }
     .p2{
-        font-size:38%;
+        font-size:60%;
         margin-right: 5px;
+        margin-top: -30px;
+        color: white;
+        font-weight: 600;
     }
     #head1{
         color: white;
@@ -457,21 +519,20 @@ html{
         height: 120px;
         margin: auto;
         display: flex;
-        /* flex-wrap: wrap; */
         align-items: center;
         justify-content: space-between;
         margin-top: 10px;
     }
     .services{
-        width: 25%;
-        height: 95%;
+        width: 27%;
+        height: 105%;
         background-color:whitesmoke;
         border-radius: 20px;
         box-shadow: 1px 1px 1px 1px lightslategray;
     }
     .services:hover{
-        width: 25%;
-        height: 95%;
+        width: 27%;
+        height: 105%;
         background-color:rgb(212, 207, 207);
         border-radius: 20px;
         box-shadow: 1px 3px 2px 1px black;
@@ -523,7 +584,7 @@ html{
         width: 100%;
         height: 670px;
         text-align: center;
-        margin-top: 230px;
+        margin-top: 130px;
     }
     #packagein{
         width: 90%;
@@ -539,33 +600,41 @@ html{
         color: darkcyan;
     }
     .fooditems{
-        width: 90px;
-        height: 110px;
-        margin: 7px;
+        width: 117px;
+        height: 137px;
+        margin: 10px;
         background-color: rgb(206, 199, 199);
         border-bottom-right-radius: 30px;
-        border-top-left-radius: 30px;
+        border-top-left-radius: 20px;
         padding: 3px;
         margin-bottom:19px;
     
     }
+    .fooditems:hover{
+        background-color: rgb(91, 89, 89);
+        color: white;
+        width: 120px;
+        height: 136px;
+    }
     .fooditems>img{
         width: 100%;
         height: 80%;
-        border-top-left-radius: 30px;
+        border-top-left-radius: 20px;
     }
     .fooditems>h4{
-        font-size: xx-small
+        font-size: smaller
     }
     .package-button>a{
         color: white;
         text-decoration: none;
+
     }
     .package-button{
         background-color: red;
         font-size: xx-small;
-        padding:0px;
-        margin-top:0px;
+        padding:1px;
+        margin-top: 9px;
+        
     }
     .carousel-item>img{
         height: 250px;
@@ -587,28 +656,82 @@ html{
     .fa-star{
         font-size: smaller;
     }
-    .card-img-top{
-        width: 60px;
-        height: 90px;
+    #combo_offers{
+        /* margin-bottom: 18px; */
+        flex-wrap:wrap; 
         
     }
-    #combo_offers{
-        margin-bottom: 8px;
-        flex-wrap:wrap; 
+   .card{
+    padding: 0px; 
+    width: 135px;
+    height: 165px;  
+    object-fit: contain;
+   }
+   #combo_offers{
+    margin-top: 60px;
+   }
+   .content1,.content2,.content3,.content4{
+    margin: 0px;
+   }
+   .content4>h3{
+    font-size: small;
+   }
+   .content3>h3{
+    font-size: small;
+   }
+   .content2>h3{
+    font-size: small;
+   }
+   .content1>h3{
+    font-size: small;
+   }
+   .btnn{
+    padding: 1px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-size: smaller;
+}
+.fooditems:hover{
+    animation: moveee 1s; 
+}
+.chef_name
+{
+  color: black;
+}
+@keyframes moveee {
+    0%{
+        transform: rotate(2deg);
     }
-    .content1,.content2,.content3,.content4{
-        width: 100%;
-        height: 100%;
-        background-color: rgb(0, 81, 128);
-        position: absolute;
-        padding: 0px;
-        display: none;
-        /* margin-top: -16px;
-        margin-left: -16px; */
+    25%{
+        transform: rotate(-2deg);
     }
-    .card{
-        padding: 0px;
+    50%{
+        transform: rotate(2deg);
     }
+    75%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}
+.cardd{
+    width: 170px;
+    height: 150px;
+    text-align: center;
+    border-radius: 20%;
+    padding: 5px;
+}
+.cardd>h5{
+    margin-top: 15px;
+    font-size: large;
+}
+#chefs{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+   
         
 }
 
