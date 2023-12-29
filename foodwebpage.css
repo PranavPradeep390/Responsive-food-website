@@ -35,6 +35,7 @@ nav{
 #home{
     background-image: url(./pics/food.jpg);
     background-size: cover;
+    background-attachment:local;
     width: 100%;
     height: 730px;
     margin: auto;
@@ -173,6 +174,8 @@ nav{
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    /* background-image: url(https://www.netscribes.com/wp-content/uploads/2019/10/customer-satisfaction-csat-score.jpg);
+    background-attachment: fixed; */
   
 }
 #about-content{
@@ -733,6 +736,54 @@ html{
 }
    
         
+}
+@media screen and (min-width : 280px)  and (max-width : 450px){
+    #head1{
+        color: white;
+        line-height: -1px;
+        font-size:140%;
+    }
+    .i1{
+       display: none;
+    }
+    .i1:hover{
+        display: none;
+    }
+    .p2{
+        display: none;
+    }
+    #head1{
+        color: white;
+        line-height: -1px;
+        font-size:200%;
+        text-align: center;
+    }
+    #about-us{
+        height: 450px;
+        
+      
+    }
+    #our-package{
+        width: 100%;
+        height: 1150px;
+     
+    }
+    .carousel-caption>h{
+        font-size: large;
+    }
+    .carousel-caption>p{
+        font-size:x-small;
+        margin: 10px;
+    }
+    #chefs{
+       justify-content: center;
+    }
+    .cardd>img{
+        width: 110px;
+        height: 110px;
+    }
+   
+
 }
 
     
