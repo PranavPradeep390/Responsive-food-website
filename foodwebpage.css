@@ -198,49 +198,111 @@ nav{
     width: 75%;
     height: 400px;
 }
-#our-package{
-    width: 100%;
-    height: 1450px;
-    text-align: center;
-}
-#packagein{
-    width: 90%;
-    height: 1300px;
+.pakkages{
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap; 
-    margin: auto;
-    padding-top: 15px;
-    /* background-color: rgb(31, 192, 192);   */
-}
-#package-para{
-    color: darkcyan;
-}
-.fooditems{
-    width: 290px;
-    height: 340px;
-    margin: 20px;
-    background-color: rgb(206, 199, 199);
-    border-bottom-right-radius: 30px;
-    border-top-left-radius: 30px;
-    padding: 10px;
+    flex-wrap: wrap;
+    padding: 30px;
+   
+    background-attachment: fixed;
 
-}
-.fooditems>img{
-    width: 100%;
-    height: 80%;
-    border-top-left-radius: 30px;
-}
-.package-button>a{
-    color: white;
-    text-decoration: none;
 }
 .package-button{
     background-color: red;
     padding: 5px;
     border-radius: 10px;
-    margin-top: -10px;
+    margin-top: -10px;
 }
+.package-button>a{
+    color: white;
+    text-decoration: none;
+}
+
+.cardy {
+    position: relative;
+    width: 220px;
+    height: 295px;
+    margin: 37px;
+
+}
+.cardy .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility:hidden ;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+
+
+}
+.cardy .frontt{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 7px 15px #000000;
+
+}
+.cardy .frontt img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardy .frontt h5{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 4);
+    text-align: center;
+}
+.cardy .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(99, 73, 57);
+    padding: 15px;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 7px 15px black;
+}
+.cardy.back .linky{
+    border-top: solid 1px white;
+    height: 50px;
+    line-height: 50px;
+}
+.cardy .back .linky a{
+    color: white;
+    text-decoration: none;
+}
+.cardy .back h5{
+    font-size: 20px;
+    margin-top: 0px;
+    letter-spacing: 2px;
+}
+.cardy .back p{
+    line-height: normal;
+}
+.cardy:hover .frontt{
+    transform: perspective(600px) rotateY(180deg);
+
+}
+.cardy:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+
+}
+.linky>a{
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: red;
+    padding: 5px;
+}
+
+
 .carousel-item>img{
     height: 400px;
     object-fit: cover;
@@ -368,12 +430,15 @@ html{
 }
 #chefs{
     width: 100%;
-    height: 270px;
+    height: 300px;
     display: flex;
     justify-content: space-between;
     padding: 0px 110px;
     margin-top: 40px;
     margin-bottom: 50px;
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2IXiRk5iH4Z-gOi37xQbv7aN3JsFFuvdMcxb-g-H_-Q&s);
+    background-attachment: fixed;
+    background-size: contain; */
 }
 .cardd{
     width: 250px;
@@ -407,11 +472,11 @@ html{
         transform: rotate(25deg);
     }
 }
-.fooditems:hover{
+/* .fooditems:hover{
     animation: moveee 1s; 
     background-color: rgb(91, 89, 89);
     color: white;
-}
+} */
 @keyframes moveee {
     0%{
         transform: rotate(2deg);
@@ -556,7 +621,7 @@ html{
         
     }
     #about-us{
-        height: 300px;
+        height: 450px;
         width: 100%;
         text-align: center;
         margin-top: 10px;
@@ -583,7 +648,7 @@ html{
     #about-img{
        display: none;
     }
-    #our-package{
+     /* #our-package{
         width: 100%;
         height: 670px;
         text-align: center;
@@ -597,7 +662,7 @@ html{
         flex-wrap: wrap; 
         margin: auto;
         padding-top: 5px;
-        /* background-color: rgb(31, 192, 192);   */
+     background-color: rgb(31, 192, 192);   
     }
     #package-para{
         color: darkcyan;
@@ -638,6 +703,21 @@ html{
         padding:1px;
         margin-top: 9px;
         
+    }  */
+    .cardy {
+        position: relative;
+        width: 170px;
+        height: 205px;
+        margin: 24px;
+    
+    }
+    .cardy>p{
+        font-size: xx-small; 
+        line-height: normal;
+    }
+    .cardy>h5{
+        font-size: xx-small;
+       
     }
     .carousel-item>img{
         height: 250px;
@@ -733,6 +813,7 @@ html{
 #chefs{
     margin-top: 0px;
     margin-bottom: 0px;
+    height: 240px;
 }
    
         
@@ -759,15 +840,15 @@ html{
         text-align: center;
     }
     #about-us{
-        height: 450px;
+        height: 600px;
         
       
     }
-    #our-package{
+    /* #our-package{
         width: 100%;
         height: 1150px;
      
-    }
+    } */
     .carousel-caption>h{
         font-size: large;
     }
